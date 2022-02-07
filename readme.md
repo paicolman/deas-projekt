@@ -9,5 +9,5 @@ Du wirdst sicher folgende Sachen brauchen, um deine Site erstellen zu können:
 * **Ein PHP-fähigen Web server:** Da sind die Extentions von VS Code sehr nützlich. Die kannst Du im VS Code drin installieren, indem Du die drey Viereckli auswählst.Dieser [PHP Server Extension]() habe ich in VS Code installiert.
 * **Andere Extentions:** Andere VS Code Extentions die nütlzich sein können sind: [HTML Snippets](https://marketplace.visualstudio.com/items?itemName=abusaidm.html-snippets) hilft beim editieren, [HTML Boilerplate](https://marketplace.visualstudio.com/items?itemName=sidthesloth.html5-boilerplate) generiert einen html "Skelett". Andere je nach Bedarf...
 
-## Was ich von deine Aufgabestellung verstanden habe
-Die html Pages musst Du offenbar selber machen. Heisst das, Du darfst kein html generator benutzen, nehme ich an. Falls eben doch, kannst Du zum Beispiel eins von diesen Sofwtar
+## Was hilfreich sein kann
+Die html Pages musst Du offenbar selber machen. Heisst das, Du darfst kein html generator benutzen, nehme ich an. Falls eben doch, kannst Du zum Beispiel [Google Web Designer](https://webdesigner.withgoogle.com/) installieren, dann kannst Du der html grafisch generieren und ist alles ein bisschen einfacher als alles "hardcore" selber zu machen...
