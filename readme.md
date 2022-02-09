@@ -60,7 +60,11 @@ CREATE TABLE IF NOT EXISTS rezepte(
 SHOW TABLES;
 ```
 
-Wenn Du diese Befehle ausführst (rechtsclick und _run mySQL query_), bekommst Du so was: |Tables_in_dea_database| |----------------------| |rezepte |
+Wenn Du diese Befehle ausführst (rechtsclick und _run mySQL query_), bekommst Du so was:
+
+| Tables_in_dea_database |
+| ---------------------- |
+| rezepte                |
 
 Und jetzt tun wir noch ein paar Rezepte darin schreiben:
 
@@ -85,7 +89,13 @@ VALUES('Kaffe Rezept','30g Kafee, 1 Tropfen Rahm', 'Mahlen, erhizen und serviere
 SELECT * FROM rezepte;
 ```
 
-Wenn Du diese Befehle ausführst bekommst Du so was: |id|name |zutaten |zubereitung | |--|------------------------|------------------------------------|------------------------------| | 1|Mein super Rezept |1 Kg Mehl, 1 Tasse Zucker |Mischen und Backen | | 2|Mein anderer mega Rezept|500g Brokkoli, 1 Löffel Salz, Wasser|Aufochen und geniessen | | 3|Kaffe Rezept |30g Kafee, 1 Tropfen Rahm |Mahlen, erhizen und servieren |
+Wenn Du diese Befehle ausführst bekommst Du so was:
+
+| id | name | zutaten | zubereitung |
+| --- | --- | --- | --- |
+| 1 | Mein super Rezept | 1 Kg Mehl, 1 Tasse Zucker | Mischen und Backen |
+| 2 | Mein anderer mega Rezept | 500g Brokkoli, 1 Löffel Salz, Wasser | Aufochen und geniessen |
+| 3 | Kaffe Rezept | 30g Kafee, 1 Tropfen Rahm | Mahlen, erhizen und servieren |
 
 In dieser [Cheat Sheet](https://www.mysqltutorial.org/mysql-cheat-sheet.aspx) findest Du alle basic Befehle für mySQL...
 
