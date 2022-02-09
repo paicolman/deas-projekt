@@ -18,7 +18,7 @@ Die html Pages musst Du offenbar selber machen. Heisst das, Du darfst kein html 
 
 ## Was ich hier gemacht habe
 
-Es sind drei Pages, eine heisst index.html, das ist quasi die "Haupt-Seite", link1.php ist eine HTML Page, wo ein kleiner Teil davon mit PHP generiert wird. Möglichst einfach, zum zeigen was man prinzipiell mit php machen kann. Die dritte ist die "kompliziertere" die hat ein formular und schickt das was drin tust in die Datenbank und die vierte macht das gegenteil, holt die Daten aus der Datenbank und zeigt sie...
+Es sind vier Pages, eine heisst index.html, das ist quasi die "Haupt-Seite", link1.php ist eine HTML Page, wo ein kleiner Teil davon mit PHP generiert wird. Möglichst einfach, zum zeigen was man prinzipiell mit php machen kann. Die dritte ist die "kompliziertere" die hat ein formular und schickt das was drin tust in die Datenbank und die vierte macht das gegenteil, holt die Daten aus der Datenbank und zeigt sie...
 
 ## Wie Du es selber machst
 
@@ -102,3 +102,28 @@ In dieser [Cheat Sheet](https://www.mysqltutorial.org/mysql-cheat-sheet.aspx) fi
 ## PHP
 
 Nun hast Du eine Datenbank mit drei Rezepte drin (man könnte es viel komplizierter machen, mit mehrere Tabellen die miteinander verlinkt sind, aber das ist dann viel zu komplex zum so erklären...), jetzt willst Du damit arbeiten und diese Daten in html anzeigen und auch neue Rezepte darin schreiben, hier ist beschrieben, wie das geht.
+
+Als erstes, musst Du das File `link1.php` anschauen. Es ist ein normales html file, mit eine Zeile in **php** geschrieben:
+
+`<?php echo("<h2>Das ist ein subtitel, der mit php gemacht wurde.</h2>"); ?>`
+
+Das liest man so: _"Lieber php: schreib mal ein Subtitel auf die Page"_. Es gibt andere Methoden um auf eine Page zu schreiben aber für uns ist dieser ok...
+
+### Mit PHP aus der Datenbank lesen
+
+Nun wird es etwas kompliziert: Im File `lese-aus-datenbank.php` habe ich das SQL Kommando `SELECT * FROM rezepte;` in php reinprogrammiert und dann php gebeten, die Resultate als Tabelle auf die Page zu schreiben. Im File habe ich versucht, mit Kommentare der Script zu beschreiben, schau es dort an.
+
+### Mit PHP auf die Datenbank schreiben
+
+Etwa aehnlich geht es mit schreiben, aber in zwei Schritten. Zuerst gibt es eine html Page, die ein Formular hat, damit der user seine Daten eingibt. Kannst Du in `add-rezept.html` anschauen. Wenn man auf den Button **submit** drückt, schickt diese Page alle Werte an den server, er startet dann das Script in `add-rezept.php`. Wie er das weiss, im Formular haben wir es geschrieben:
+
+`<form action=`**"add-rezept.php"**` method="post">`
+
+Nun musst Du das File `add-rezept.php` anschauen, da ist der Script definiert, der auf die Datenbank schreibt. Ich habe die Details im File als Kommentare geschrieben, aber eigentlich macht er dieses SQL Kommando:
+
+```
+INSERT INTO rezepte(name, zutaten, zubereitung)
+VALUES('Was auch','immer der user', 'geschrieben hat...');
+```
+
+**_So, das wars mit meine "first aid"! Ich hoffe es hilft! ;)_**
