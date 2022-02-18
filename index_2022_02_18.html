@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snacketta</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Supermercado+One&display=swap" rel="stylesheet">
+ <style>
+        body{font-family: 'Supermercado One', cursive;
+        background-color: #f3f5f6;
+    
+    
+    
+    }
+
+.riegel_heather{
+            width: 100%; 
+            height: 500px;
+            object-fit: cover;
+            display: block; 
+            object-position: 20%;
+        }
+
+.headline{
+            color:rgb(95, 46, 61); 
+        }
+
+
+.image-container{
+    background-color:white;
+    padding-left:100px;
+    padding-right:100px; 
+}
+.navbar{
+    display: flex; 
+    justify-content:space-between; 
+    align-items: center;
+}
+
+a{
+    color:rgb(0, 0, 0);
+    text-decoration: overlline;
+    margin-left: 16px;
+    font-weight: bold;
+}
+a:hover {
+    text-decoration: none; 
+}
+
+.text-highlight{
+    color:rgb(139, 87, 51);
+    font-size: 40px;
+}
+.text-container {
+       background-color:rgb(95, 46, 61);
+       padding: 8px; 
+       color:rgb(255, 161, 189);
+       font-weight:rgb(95, 46, 61) 600; 
+   } 
+
+.maps-container{
+       margin-top: 16px; 
+       display:flex;
+       justify-content: space-between;
+   }
+.maps-right{
+       margin-left: 16px; 
+       width: 30%; 
+   }
+
+.maps-frame {
+       border:0; 
+       height: 350px; 
+       width: 70%; 
+
+   }
+.legal-content{
+       padding: 8px; 
+   }
+.legal-right{
+       margin: right
+   }
+.legal-text{
+       color:rgb(95, 46, 61);
+   }
+    </style>
+
+    </head>
+    <body>
+        <div class="navbar">
+            <h1 class="headline">
+    
+                Snacketta <br>  <span class="text-highlight">Schnelle Rezepte für jede Saison</span>
+            </h1>
+    
+            <div>
+                <a href= "./frühling/frühling_seite.html">Frühling</a>
+                <a href="./sommer/summer.jpg">Sommer</a>  
+                <a href="#">Herbst</a>
+                <a href="#">Winter</a>
+                <a href="#">Infos</a>
+            </div>
+        </div>
+        
+        
+    
+        <div class="image-container">
+            <img class="riegel_heather" src="riegel_heather.jpg">
+            <div class="text-container">
+                Mit saisonalen Rezepten in nur 30 Minuten zu leckeren Resultaten
+            </div>
+    
+            <div class ="maps-container">
+                <iframe class="maps-frame" src= https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2695.214738733172!2d8.73803751566607!3d47.50520907917807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479a99863e66f82d%3A0xd6214770ac6fd92f!2sRychenbergstrasse%2C%20Winterthur!5e0!3m2!1sde!2sch!4v1644044363480!5m2!1sde!2sch" 
+                allowfullscreen="" loading="lazy"></iframe>
+    
+                <div class="text-container maps-right">
+                    Lassen Sie sich auch in unserer neuen Filiale verwöhnen.
+                </div>
+            </div>
+    
+        </div>
+    
+        <div class="legal-content">
+            <span class= "legal-text"> (c) 2022 - Imagninary Company CmbH | </span><a href="#"> Impressum</a> | <a href="#"> Datenschutz</a>
+        </div>
+        <p><a href="./link1.php">Link zu einer php-generierten Seite</a></p>
+        <p><a href="./add-rezept.html">Da können wir ein Rezept hinzufügen</a></p>
+        <p><a href="./lese-aus-datenbank.php">Da lesen wir alle Rezepte aus</a></p>
+    </body>
+</html>
